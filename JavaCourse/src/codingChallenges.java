@@ -15,23 +15,131 @@ public class codingChallenges {
 //        isLeapyear(1200);
 //        isLeapyear(2000);
 
-        char switchValue = 'a';
-        switch(switchValue) {
-            case 'b':
-                System.out.println("value was is not b");
-                break;
-            case 'c':
-                System.out.println("value was not c");
-                break;
-            case 'd': case 'e': case 'f':
-                System.out.println("value is not d nor e nor f");
-                break;
-            default:
-                System.out.println("value was actually a");
-                break;
+//        char switchValue = 'd';
+//        switch(switchValue) {
+//            case 'b':
+//                System.out.println("value was is not b");
+//                break;
+//            case 'c':
+//                System.out.println("value was not c");
+//                break;
+//            case 'd': case 'e': case 'f':
+//                System.out.println("value is not d nor e nor f");
+//                break;
+//            default:
+//                System.out.println("value was actually a");
+//                break;
+//        }
+//        printDayOfTheWeek(5);
+//        printDayOfTheWeek(7);
+
+//        printNUmberInWord(2);
+//
+//        for(double i=2; i<9; i++){
+//            System.out.println("interest rate for " + i + " are " + calculateInterest(10000, i));
+//        }
+//        System.out.println("in reverse");
+//        for(double i=9; i>=2; i--){
+//            System.out.println("interest rate for " + i + " are " + calculateInterest(10000, i));
+//        }
+//
+//        int count = 0;
+//        int sum = 0;
+//        for(int i=1; i<=1000; i++){
+//            if((i % 3 == 0) && (i % 5 == 0)){
+//                count++;
+//                sum += i;
+//                System.out.println("number is " + i);
+//            }
+//            if(count == 5){
+//                break;
+//            }
+//        }
+//        System.out.println("sum = " + sum);
+        isOdd(-1);
+        isOdd(2);
+        isOdd(3);
+        sumOdd(1, 39);
+    }
+
+    public static void isOdd(int number){
+        if(number < 0){
+            System.out.println("false");
+        } else if(number % 2 == 1){
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+
+    }
+
+    public static int sumOdd(int start, int end){
+        int count=0;
+        int sum = 0;
+        for(int i=start; i<end; i++) {
+
+                count++;
+                sum += i;
+
+            }
+        return sum;
         }
 
 
+
+    public static double calculateInterest(double amount, double interestRate){
+        return (amount * (interestRate/100));
+    }
+
+
+
+
+    public static void printDayOfTheWeek (int day){
+              switch(day){
+            case 0:
+                System.out.println("Monday");
+                break;
+            case 1:
+                System.out.println("Tuesday");
+                break;
+            case 2:
+                System.out.println("Wednesday");
+                break;
+            case 3:
+                System.out.println("Thursday");
+                break;
+            case 4:
+                System.out.println("Friday");
+                break;
+            case 5:
+                System.out.println("saturday");
+                break;
+            case 6:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Invalid day");
+        }
+    }
+
+    public static void printNUmberInWord(int num){
+        switch(num){
+            case 1:
+                System.out.println("ONE");
+                break;
+            case 2:
+                System.out.println("TWO");
+                break;
+            case 3:
+                System.out.println("THree");
+                break;
+            case 4:
+                System.out.println("four");
+                break;
+            default:
+                System.out.println("out of scope");
+
+        }
     }
 
 
