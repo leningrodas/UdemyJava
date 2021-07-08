@@ -153,9 +153,23 @@ public class TestDriver {
         scan.close();
 
 
-    numberPalindrome(454);
+        numberPalindrome(454);
 
 
+
+    }
+
+    public static int sumEvenDigits(int number){
+        int sumTotal = 0;
+        int evenNum =0;
+
+        while(number<0);
+            evenNum++;
+            if(number% 2 ==0){
+                evenNum++;
+           sumTotal = number /10;
+        }
+        return sumTotal;
     }
 
     public static int sumFirstAndLastDigit(int number){
